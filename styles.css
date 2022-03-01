@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size:  contain;
+    min-height: 100vh;
+    font-family: 'Red Hat Display';
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 6px 6px hsl(225, 100%, 94%);
+}
+
+.desc {
+    padding: 5%;
+    text-align: center;
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.desc p {
+    color: rgb(154, 163, 177);
+     margin: 18px;
+     font-size: 16px;
+ }
+ .plan {
+   border-radius: 12px;
+   background-color: hsl(225, 100%, 98%);
+   padding: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 25px 15px;
+}
+
+.plan img {
+    width: 35px;
+}
+
+.plan-left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.plan-left div h5 {
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+    padding-left: 12px;
+    line-height: 1.5;
+}
+
+.plan-left div span {
+    color: rgb(154, 163, 177);
+    font-size: 13px;
+}
+ 
+.plan a {
+    font-weight: 900;
+    font-size: 12px;
+    color:hsl(245, 75%, 52%);
+    transition: color .3s ease;
+}
+
+.plan a:hover {
+    text-decoration: none;
+    color:hsl(258, 72%, 43%);
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px 0;
+    margin: 25px 15px;
+    box-shadow: 0px 8px 16px 0px rgb(220, 220, 247);
+}
+
+.button:hover {
+    background-color: hsl(256, 78%, 61%);
+}
+
+.last {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.last:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (min-width: 425px) {
+
+    body {
+        font-size: 13px;
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+
+    .desc {
+        padding: 7%;
+        text-align: center;
+    }
+
+    .plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+} 
